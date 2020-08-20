@@ -11,7 +11,9 @@ const RandomMood = () => {
     }
     return (
         <>
-            <div onClick={randomMood}>
+            <div style={
+                { height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }
+            } onClick={randomMood}>
                 <Cat size={200} mood={moodArray[mood]} color="#FDA7DC" />
             </div>
         </>
